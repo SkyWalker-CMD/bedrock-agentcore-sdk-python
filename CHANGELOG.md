@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.1.9] - 2025-10-15
+
+### Added
+- feat: Initial commit for Session Manager, Session and Actor constructs (#87) (72e37df)
+
+### Fixed
+- fix: rename list_events parameter include_parent_events to include_parent_branches to match the boto3 parameter (#108) (ee35ade)
+- fix: add the include_parent_events parameter to the get_last_k_turns method (#107) (eee67da)
+- fix: fix session name typo in get_last_k_turns (#104) (1ba3e1c)
+- fix: fix validation exception which occurs if the default aws region mismatches with the user's region_name (#102) (207e3e0)
+- fix: swap event_timestamp with branch in add_turns (#99) (0027298)
+
+### Documentation
+- docs: remove preview verbiage following Bedrock AgentCore GA release (#113) (9d496aa)
+
+### Other Changes
+- Add more unit test coverage for new Identity APIs (2db7d17)
+- Add more unit test coverage for the HTTP context manager and workload callback urls (b4ec9aa)
+- Added more unit test coverage for new APIs from the Identity primitive (8dd9397)
+- Merge branch 'main' into main (e697970)
+- fix(deps): restrict pydantic to versions below 2.41.3 (#115) (b4a49b9)
+- Add OAuth2 3LO Identity APIs and enable setting 3LO callback URL via HTTP headers (aa3c3f4)
+- feat(browser): Add viewport configuration support to BrowserClient (#112) (014a6b8)
+- chore: bump version to 0.1.7 (#103) (d572d68)
+- chore: bump version to 0.1.6 (#101) (5d5271d)
+- chore: Add README for MemorySessionManager (#100) (9b274a0)
+- Feature/boto client config (#98) (107fd53)
+- Update README.md (#95) (0c65811)
+- Release v0.1.5 (#96) (7948d26)
+
 ## [0.1.7] - 2025-10-01
 
 ### Fixed
